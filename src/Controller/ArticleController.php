@@ -29,6 +29,8 @@ class ArticleController extends AbstractController
             'lore ipsunlore ipsun lore ipsun',
         ];
 
+   
+
         return $this->render('article/show.html.twig', [
             'title' => ucwords(str_replace('-', '', $slug)),
             'comments' => $comments,
