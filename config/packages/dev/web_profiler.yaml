@@ -4,4 +4,4 @@ web_profiler:
 
 framework:
     profiler: 
-        collect: false
+        collect: true

@@ -23,18 +23,20 @@ class ArticleController extends AbstractController
     
     public function show($slug)
     {
+      
         $comments = [
             'lore ipsunlore ipsun lore ipsun',
             'lore ipsunlore ipsun lore ipsun',
             'lore ipsunlore ipsun lore ipsun',
         ];
 
-   
+  dump($slug);
 
         return $this->render('article/show.html.twig', [
             'title' => ucwords(str_replace('-', '', $slug)),
             'comments' => $comments,
         ]);
+       
     }
     
 }
